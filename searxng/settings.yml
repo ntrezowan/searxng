@@ -1,0 +1,65 @@
+# see https://docs.searxng.org/admin/engines/settings.html#use-default-settings
+use_default_settings: true 
+
+general:
+  debug: false
+  instance_name: "Search"
+  donation_url: false
+  contact_url: false
+  enable_metrics: false
+
+search:
+  safe_search: 1
+  autocomplete: 'google'
+  default_lang: ""
+  ban_time_on_fail: 5
+  max_ban_time_on_fail: 120
+  suspended_times:
+    SearxEngineAccessDenied: 86400
+    SearxEngineCaptcha: 86400
+    SearxEngineTooManyRequests: 3600
+    cf_SearxEngineCaptcha: 1296000
+    cf_SearxEngineAccessDenied: 86400
+    recaptcha_SearxEngineCaptcha: 604800
+  formats:
+    - html
+
+server:
+  # base_url is defined in the SEARXNG_BASE_URL environment variable, see .env and docker-compose.yml
+  secret_key: "f9653eaf68f00f165646ca4bbbc479c6a1f2c0ab9067f2eb4fd9cb650abbda37"  # change this!
+  limiter: false  # can be disabled for a private instance
+  image_proxy: true
+
+ui:
+  static_use_hash: true
+  default_locale: "en"
+  query_in_title: false
+  infinite_scroll: true
+  center_alignment: true
+  cache_url: https://web.archive.org/web/
+  default_theme: simple
+  theme_args:
+    simple_style: light
+
+redis:
+  url: redis://redis:6379/0
+
+categories_as_tabs:
+  general:
+  images:
+  videos:
+  news:
+  map:
+  music:
+  it:
+  science:
+  files:
+  social media:
+
+engines:
+  - name: bing
+    disabled: false
+  - name: qwant
+    disabled: true
+  - name: yahoo
+    disabled: false
