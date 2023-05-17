@@ -80,7 +80,7 @@
         - html
 
     server:
-      secret_key: "f9653eaf68f00f165646ca4bbbc479c6a1f2c0ab9067f2eb4fd9cb650abbda37"
+      secret_key: ""
       limiter: false
       image_proxy: true
 
