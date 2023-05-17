@@ -21,4 +21,33 @@
     chmod +x ~/.docker/cli-plugins/docker-compose
     ```
 
-4. 
+3. Open firwall for SSH and HTTP/HTTPS traffic
+
+    ```
+    sudo ufw enable
+    sudo ufw allow 22
+    sudo ufw allow 80
+    sudo ufw allow 443
+    sudo ufw status verbose
+    ```
+ 
+4. Clone SearxNG repo
+
+    ```
+    cd /usr/local
+    git clone https://github.com/searxng/searxng-docker.git
+    cd searxng-docker
+    ```
+5. Update .env file
+
+    ```
+    SEARXNG_HOSTNAME=331221.xyz
+    LETSENCRYPT_EMAIL=
+    ```
+
+6. Update secret
+
+    ```
+    sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
+    ```
+
