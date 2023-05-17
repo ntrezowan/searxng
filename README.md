@@ -120,3 +120,34 @@
       - name: yahoo
         disabled: false
     ```
+
+8. Create systemd service
+
+    ```
+    [Unit]
+    Description=SearXNG service
+    Requires=docker.service
+    After=docker.service
+
+    [Service]
+    Restart=on-failure
+
+    Environment=SEARXNG_DOCKERCOMPOSEFILE=docker-compose.yaml
+
+    WorkingDirectory=/usr/local/searxng-docker
+    ExecStart=/usr/libexec/docker/cli-plugins/docker-compose -f ${SEARXNG_DOCKERCOMPOSEFILE} up --remove-orphans
+    ExecStop=/usr/libexec/docker/cli-plugins/docker-compose -f ${SEARXNG_DOCKERCOMPOSEFILE} down
+
+    [Install]
+    WantedBy=multi-user.target
+
+    systemctl enable $(pwd)/searxng-docker.service
+
+    systemctl start searxng-docker.service
+    ```
+  
+ 9. Start SearxNG
+
+    ```
+    sudo systemctl start searxng-docker.service
+    ```
