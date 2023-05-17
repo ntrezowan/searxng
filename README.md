@@ -54,7 +54,6 @@
 7. Update setting.yml
 
     ```
-    # see https://docs.searxng.org/admin/engines/settings.html#use-default-settings
     use_default_settings: true
 
     general:
@@ -81,9 +80,8 @@
         - html
 
     server:
-      # base_url is defined in the SEARXNG_BASE_URL environment variable, see .env and docker-compose.yml
-      secret_key: "f9653eaf68f00f165646ca4bbbc479c6a1f2c0ab9067f2eb4fd9cb650abbda37"  # change this!
-      limiter: false  # can be disabled for a private instance
+      secret_key: "f9653eaf68f00f165646ca4bbbc479c6a1f2c0ab9067f2eb4fd9cb650abbda37"
+      limiter: false
       image_proxy: true
 
       ui:
