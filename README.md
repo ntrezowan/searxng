@@ -138,14 +138,11 @@
 
     [Install]
     WantedBy=multi-user.target
-
-    systemctl enable $(pwd)/searxng-docker.service
-
-    systemctl start searxng-docker.service
     ```
   
  9. Start SearxNG
 
     ```
+    sudo systemctl enable $(pwd)/searxng-docker.service
     sudo systemctl start searxng-docker.service
     ```
