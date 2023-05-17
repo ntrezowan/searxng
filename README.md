@@ -1,5 +1,5 @@
 
-## How to recreate 331221.xyz
+## How to recreate SearxNG instance
 
 1. Install Docker
 
