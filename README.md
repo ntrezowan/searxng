@@ -1,3 +1,4 @@
+**This instance (VM.Standard.A1.Flex) is in Oracle OCI
 
 ## How to recreate SearxNG instance
 
