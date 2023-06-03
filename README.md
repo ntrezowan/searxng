@@ -55,6 +55,7 @@
 7. Update setting.yml
 
     ```
+    # see https://docs.searxng.org/admin/engines/settings.html#use-default-settings
     use_default_settings: true
 
     general:
@@ -65,7 +66,7 @@
       enable_metrics: false
 
     search:
-      safe_search: 1
+      safe_search: 0
       autocomplete: 'google'
       default_lang: ""
       ban_time_on_fail: 5
@@ -81,21 +82,22 @@
         - html
 
     server:
-      secret_key: ""
-      limiter: false
+      # base_url is defined in the SEARXNG_BASE_URL environment variable, see .env and docker-compose.yml
+      secret_key: "f9653eaf68f00f165646ca4bbbc479c6a1f2c0ab9067f2eb4fd9cb650abbda37"  # change this!
+      limiter: true  # can be disabled for a private instance
       image_proxy: true
 
-      ui:
+    ui:
       static_use_hash: true
-      default_locale: "en"
+      default_locale: ""
       query_in_title: false
       infinite_scroll: true
       center_alignment: true
+      results_on_new_tab: true
       cache_url: https://web.archive.org/web/
       default_theme: simple
       theme_args:
         simple_style: light
-
     redis:
       url: redis://redis:6379/0
 
@@ -117,7 +119,7 @@
       - name: qwant
         disabled: true
       - name: yahoo
-        disabled: false
+        disabled: false 
     ```
 
 8. Create systemd service
