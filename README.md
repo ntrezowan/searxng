@@ -43,7 +43,7 @@
 
     ```
     SEARXNG_HOSTNAME=331221.xyz
-    LETSENCRYPT_EMAIL=
+    LETSENCRYPT_EMAIL=who@331221.xyz
     ```
 
 6. Update secret
