@@ -1,6 +1,6 @@
-**This instance (VM.Standard.A1.Flex) is in Oracle OCI
+**This instance (VM.Standard.A1.Flex) is in Oracle OCI.
 
-## How to recreate SearxNG instance
+## How to build SearxNG
 
 1. Install Docker
 
