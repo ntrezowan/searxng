@@ -1,6 +1,6 @@
 **This instance (VM.Standard.A1.Flex) is in Oracle OCI and running on Ubuntu.
 
-## How to build SearxNG
+## How to build SearXNG
 
 1. Install Docker
 
@@ -143,9 +143,19 @@
     WantedBy=multi-user.target
     ```
   
- 9. Start SearxNG
+ 9. Start SearXNG
 
     ```
     sudo systemctl enable $(pwd)/searxng-docker.service
     sudo systemctl start searxng-docker.service
     ```
+
+---
+
+## How to update SearxNG
+Run the following;
+```
+docker-compose pull
+docker-compose down
+docker-compose up
+```
