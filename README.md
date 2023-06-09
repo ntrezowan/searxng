@@ -153,7 +153,7 @@
 ---
 
 ## How to update SearxNG
-Run the following;
+Run the following
 ```
 docker-compose pull
 docker-compose down
