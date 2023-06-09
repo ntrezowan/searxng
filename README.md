@@ -29,22 +29,8 @@
     sudo ufw allow 22
     sudo ufw allow 80
     sudo ufw allow 443
-    
     sudo ufw status verbose
-    Status: active
-    Logging: on (low)
-    Default: deny (incoming), allow (outgoing), deny (routed)
-    New profiles: skip
-
-    To                         Action      From
-    --                         ------      ----
-    22/tcp (OpenSSH)           ALLOW IN    Anywhere
-    443                        ALLOW IN    Anywhere
-    80                         ALLOW IN    Anywhere
-    22/tcp (OpenSSH (v6))      ALLOW IN    Anywhere (v6)
-    443 (v6)                   ALLOW IN    Anywhere (v6)
-    80 (v6)                    ALLOW IN    Anywhere (v6)
-        ```
+    ```
  
 4. Clone SearxNG repo
 
