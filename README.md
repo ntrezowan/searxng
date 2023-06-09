@@ -122,7 +122,7 @@
         disabled: false 
     ```
 
-8. Create systemd service
+8. Create systemd service as following
 
     ```
     [Unit]
