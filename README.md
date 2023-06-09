@@ -22,7 +22,7 @@
     chmod +x ~/.docker/cli-plugins/docker-compose
     ```
 
-3. By default, an OCI instance is default deny for all incoming traffic. So open firewall for SSH and HTTP/HTTPS traffic
+3. By default, an OCI instance is deny all for all incoming traffic. So open firewall for SSH and HTTP/HTTPS traffic
 
     ```
     sudo ufw enable
