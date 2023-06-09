@@ -4,7 +4,7 @@
 - Docker
 - Docker Compose
 
-## How to build SearxNG
+### How to build SearxNG
 
 1. Install Docker
 
