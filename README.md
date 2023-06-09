@@ -22,7 +22,7 @@
     chmod +x ~/.docker/cli-plugins/docker-compose
     ```
 
-3. Open firwall for SSH and HTTP/HTTPS traffic
+3. Open firewall for SSH and HTTP/HTTPS traffic
 
     ```
     sudo ufw enable
