@@ -1,3 +1,5 @@
+**Author: https://github.com/searxng/searxng-docker
+
 **This instance (VM.Standard.A1.Flex) is in Oracle OCI and running on Ubuntu.
 
 ## How to build SearXNG
