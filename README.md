@@ -1,10 +1,6 @@
 **This instance (VM.Standard.A1.Flex) is in Oracle OCI and running on Ubuntu.
 
-### Packages need to be installed
-- Docker
-- Docker Compose
-
-### How to build SearxNG
+## How to build SearxNG
 
 1. Install Docker
 
