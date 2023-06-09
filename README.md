@@ -29,8 +29,8 @@
     sudo ufw allow 22
     sudo ufw allow 80
     sudo ufw allow 443
-    sudo ufw status verbose
     
+    sudo ufw status verbose
     Status: active
     Logging: on (low)
     Default: deny (incoming), allow (outgoing), deny (routed)
