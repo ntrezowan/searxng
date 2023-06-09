@@ -152,7 +152,7 @@
 
 ---
 
-## How to update SearxNG
+## How to update SearXNG
 Run the following
 ```
 docker-compose pull
