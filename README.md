@@ -52,7 +52,7 @@
     sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
     ```
 
-7. Update setting.yml
+7. Update setting.yml as following
 
     ```
     # see https://docs.searxng.org/admin/engines/settings.html#use-default-settings
