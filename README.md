@@ -39,7 +39,7 @@
     git clone https://github.com/searxng/searxng-docker.git
     cd searxng-docker
     ```
-5. Update .env
+5. Update .env. In here, you need to use an email that can be verified by Let's Encrypt to assign certs
 
     ```
     SEARXNG_HOSTNAME=331221.xyz
