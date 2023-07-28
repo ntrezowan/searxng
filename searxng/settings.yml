@@ -1,15 +1,15 @@
-use_default_settings: true 
+use_default_settings: true
 
 general:
   debug: false
-  instance_name: "Search"
+  instance_name: "SearX"
   donation_url: false
   contact_url: false
   enable_metrics: false
 
 search:
-  safe_search: 1
-  autocomplete: 'google'
+  safe_search: 0
+  autocomplete: "google"
   default_lang: ""
   ban_time_on_fail: 5
   max_ban_time_on_fail: 120
@@ -24,17 +24,17 @@ search:
     - html
 
 server:
-
-  secret_key: ""  
-  limiter: false  
+  secret_key: ""
+  limiter: false 
   image_proxy: true
 
 ui:
   static_use_hash: true
-  default_locale: "en"
-  query_in_title: false
+  default_locale: ""
+  query_in_title: true
   infinite_scroll: true
   center_alignment: true
+  results_on_new_tab: true
   cache_url: https://web.archive.org/web/
   default_theme: simple
   theme_args:
@@ -62,3 +62,13 @@ engines:
     disabled: true
   - name: yahoo
     disabled: false
+  - name: currency
+    disabled: true
+  - name: dictzone
+    disabled: true
+  - name: lingva
+    disabled: true
+  - name: wikipedia
+    disabled: true
+  - name: wikidata
+    disabled: true
