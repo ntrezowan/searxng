@@ -1,4 +1,4 @@
-*\*This instance is listed in SearX public instances (https://searx.space/)*
+*\*This instance is listed in SearXNG public instances (https://searx.space/)*
 
 *\*This instance (VM.Standard.A1.Flex) is in Oracle OCI and running on Ubuntu.*
 
